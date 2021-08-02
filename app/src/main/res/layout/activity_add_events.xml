@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prabha.firebasedatabase.AddEventsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/lt_title"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/comics_two"
+        android:background="@drawable/box_bg_orange"
+        android:text="Runners Connect"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/lt_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/comics_two"
+            android:text="Post Event"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <!--  Email Label -->
+
+            <EditText
+                android:id="@+id/input_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/comici"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/box_bg"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/black"
+                android:cursorVisible="true"
+                android:hint="Enter Event Name" />
+
+
+            <EditText android:id="@+id/input_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:fontFamily="@font/comici"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/box_bg"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/black"
+                android:cursorVisible="true"
+                android:hint="Enter Location"/>
+        <EditText android:id="@+id/input_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comici"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_bg"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/black"
+            android:cursorVisible="true"
+            android:hint="Enter Venue"/>
+        <EditText android:id="@+id/input_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comici"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_bg"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/black"
+            android:cursorVisible="true"
+            android:hint="Enter distance to run (Km)"/>
+
+            <EditText
+                android:id="@+id/input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comici"
+                android:padding="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/box_bg"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/black"
+                android:cursorVisible="false"
+                android:textAllCaps="true"
+                android:hint="Choose Start date"
+                tools:ignore="TextFields" />
+        <EditText android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comici"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_bg"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/black"
+            android:cursorVisible="true"
+            android:hint="Enter your description"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_post"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_two"
+            android:background="@drawable/box_bg_orange"
+            android:padding="12dp"
+            android:text="Post"/>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

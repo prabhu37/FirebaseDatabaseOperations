@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prabha.firebasedatabase.LocationActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/lt_title"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/comics_two"
+        android:background="@drawable/box_bg_orange"
+        android:text="Runners Connect"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Choose a location"
+        android:layout_below="@+id/lt_title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_choose"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comics_two"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_choose"
+        android:layout_above="@+id/btn_confirm"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currently no locations available"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comics_light"
+        android:id="@+id/tvInfo"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/lt_home_option"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comics_two"
+        android:background="@drawable/box_bg_orange"
+        android:padding="12dp"
+        android:text="Confirm"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lt_home_option"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Profile"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_light"
+            android:background="@drawable/oval_bg"
+            android:id="@+id/tvProfile"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Log Out"
+            android:textSize="10sp"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_light"
+            android:background="@drawable/oval_bg"
+            android:id="@+id/tvLogOut"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

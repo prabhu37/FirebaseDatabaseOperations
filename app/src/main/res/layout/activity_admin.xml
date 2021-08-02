@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.prabha.firebasedatabase.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/lt_title"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/comics_two"
+        android:background="@drawable/box_bg_orange"
+        android:text="Runners Connect"
+        />
+
+    <TextView
+        android:text="Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/lt_title"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comics_two"
+        android:id="@+id/tv_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/box_bg_orange"
+        android:id="@+id/tvNewEvent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Post New Event"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_name"
+        android:fontFamily="@font/comics_bold"
+        android:textSize="18sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rvEvents"
+        android:layout_below="@+id/tvNewEvent"
+        android:layout_above="@+id/lt_home_option"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lt_home_option"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Log Out"
+            android:textSize="10sp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_light"
+            android:background="@drawable/oval_bg"
+            android:id="@+id/tvLogOut"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

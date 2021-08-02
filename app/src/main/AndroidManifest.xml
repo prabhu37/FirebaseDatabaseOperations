@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.prabha.firebasedatabase">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Dark"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.prabha.firebasedatabase.SplashActivity"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prabha.firebasedatabase.EventDetailsActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.LocationActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.UsersDetailsActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.UserEventsActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.AddEventsActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.AdminActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.MainActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.prabha.firebasedatabase.LoginActivity"
+            android:theme="@style/AppTheme.Dark">
+
+        </activity>
+        <activity
+            android:name="com.prabha.firebasedatabase.SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+    </application>
+
+</manifest>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/comics_two"
+            android:background="@drawable/box_bg_orange"
+            android:text="Runners Connect"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Sign in"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_two"
+            android:textSize="18sp"/>
+        <!--  Email Label -->
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_bg"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/comici"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="35dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter Your Email" />
+
+        <!--  Password Label -->
+
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="35dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter Your Password"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/rb_user"
+                android:fontFamily="@font/comics_two"
+                android:drawablePadding="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:text="Participant"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/rb_admin"
+                android:fontFamily="@font/comics_two"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:text="Admin"/>
+        </RadioGroup>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_two"
+            android:background="@drawable/box_bg_orange"
+            android:padding="12dp"
+            android:text="Login"/>
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Don't have an account? Sign up"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comic_one"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="v1.0.0"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

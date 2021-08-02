@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603473566361",
+    "firebase_url": "https://sportsevents-6d529.firebaseio.com",
+    "project_id": "sportsevents-6d529",
+    "storage_bucket": "sportsevents-6d529.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603473566361:android:25fc87d081240e05113608",
+        "android_client_info": {
+          "package_name": "com.prabha.firebasedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603473566361-rnvht48chq8svs20jgo9kqcpp32g30hj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name":  "com.prabha.firebasedatabase",
+            "certificate_hash": "a9e79648687e9b79597ac20bc6e1f34ed0e90cb3"
+          }
+        },
+        {
+          "client_id": "603473566361-ltl4i9o6f4duccuqianvpqqmg1lcmjn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjVZC0puf9tSs24Fltfv5WF-VLvwTPWys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603473566361-ltl4i9o6f4duccuqianvpqqmg1lcmjn9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

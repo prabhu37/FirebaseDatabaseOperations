@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/lt_title"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/comics_two"
+        android:background="@drawable/box_bg_orange"
+        android:text="Runners Connect"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lt_title"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:cursorVisible="true"
+              android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your Name" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/rb_male"
+                android:fontFamily="@font/comics_two"
+                android:drawablePadding="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:checked="true"
+                android:text="Male"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/rb_female"
+                android:fontFamily="@font/comics_two"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:text="Female"/>
+        </RadioGroup>
+
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your Email Address" />
+
+
+            <EditText android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your Mobile Number" />
+
+
+            <EditText android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your Age" />
+
+
+            <EditText android:id="@+id/input_shoes_used"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your Shoes" />
+
+
+
+            <EditText android:id="@+id/input_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your  Area" />
+
+
+            <EditText android:id="@+id/input_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter your City" />
+
+
+            <EditText android:id="@+id/input_distance_ran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Longest distance ran (Km)" />
+
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Enter Password"/>
+
+            <EditText android:id="@+id/input_reEnterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/comici"
+                android:background="@drawable/box_bg"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Re-enter Password"/>
+
+        <!-- Signup Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comics_two"
+            android:background="@drawable/box_bg_orange"
+            android:padding="12dp"
+            android:text="Create Account"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comic_one"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
